@@ -11,7 +11,7 @@ export default defineConfig({
     proxy: {
       // Proxy API requests to the backend server during development
       "/api": {
-        target: "http://localhost:3001", // Your backend server address
+        target: "https://render-video-using-express-js-backend.vercel.app/", // Your backend server address
         changeOrigin: true,
         // Optional: rewrite path if needed, but usually not for /api
         // rewrite: (path) => path.replace(/^\/api/, ''),
